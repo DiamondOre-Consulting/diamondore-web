@@ -3,7 +3,7 @@ import Bupa from "../assets/agarwal.png";
 import SBI from "../assets/sbinew-png.png";
 import NewMax from "../assets/logo2.png";
 import Aviva from "../assets/Care_health_insurance_logo.png";
-import ICICI from "../assets/Kotak_Mahindra_bank_logo.png";
+// import ICICI from "../assets/Kotak_Mahindra_bank_logo.png";
 import Canara from "../assets/can-hsbc-new.png";
 import IndiaFirst from "../assets/india-png.png";
 
@@ -30,9 +30,9 @@ const Clients = () => {
             <img className="bg-transparent drop-shadow-2xl w-1/4" src={SBI} alt="" />
           </div>
 
-          <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
+          {/* <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
             <img className="bg-transparent drop-shadow-2xl w-1/2" src={ICICI} alt="" />
-          </div>
+          </div> */}
 
           <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
             <img className="bg-transparent drop-shadow-2xl w-1/3" src={Aviva} alt="" />
