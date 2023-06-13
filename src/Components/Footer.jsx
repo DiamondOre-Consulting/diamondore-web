@@ -21,7 +21,7 @@ const Footer = () => {
                 <p className="text-3xl font-bold text-newBlue leading-6">
                   Diamond Ore <br />{" "}
                   <span className="text-xl font-semibold text-newBlue ">
-                    Job Consultancy Pvt. Ltd.
+                    Consulting Pvt. Ltd.
                   </span>
                 </p>
               </a>

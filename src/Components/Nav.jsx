@@ -10,7 +10,7 @@ const Nav = () => {
       <div className="flex-1 md:flex md:items-center md:gap-2">
        
         <img className='max-w-sm block flex justify-left items-left' src={Diamond} alt="" />
-        <a className='decoration-none' href='/'><p className='text-3xl font-bold text-newBlue leading-6'>Diamond Ore <br/> <span className='text-xl font-semibold text-newBlue '>Job Consultancy Pvt. Ltd.</span></p></a>
+        <a className='decoration-none' href='/'><p className='text-3xl font-bold text-newBlue leading-6'>Diamond Ore <br/> <span className='text-xl font-semibold text-newBlue '>Consulting Pvt. Ltd.</span></p></a>
       </div>
 
       <div className="md:flex md:items-center md:gap-12">

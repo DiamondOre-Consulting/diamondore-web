@@ -28,7 +28,7 @@ const Hero = () => {
               alt=""
             />
               <h1 className="text-3xl font-extrabold sm:text-5xl text-newBlue drop-shadow-2xl leading-8">
-                Diamond Ore <p className='text-xl font-semibold text-newBlue '>Job Consultancy Pvt. Ltd.</p>
+                Diamond Ore <p className='text-xl font-semibold text-newBlue '>Consulting Pvt. Ltd.</p>
               </h1>
 
               <p className="mt-3 sm:text-xl/relaxed font-semibold text-newBlue drop-shadow-2xl">
