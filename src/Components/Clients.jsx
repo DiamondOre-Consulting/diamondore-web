@@ -1,12 +1,11 @@
 import React from "react";
-import Bupa from "/src/assets/agarwal.png";
-import SBI from "/src/assets/sbinew-png.png";
-import NewMax from "/src/assets/logo2.png";
-import Aviva from "/src/assets/Care_health_insurance_logo.png";
-import ICICI from "/src/assets/Kotak_Mahindra_bank_logo.png";
-import PNB from "/src/assets/pnb-met.png";
-import Canara from "/src/assets/can-hsbc-new.png";
-import IndiaFirst from "/src/assets/india-png.png";
+import Bupa from "../assets/agarwal.png";
+import SBI from "../assets/sbinew-png.png";
+import NewMax from "../assets/logo2.png";
+import Aviva from "../assets/Care_health_insurance_logo.png";
+import ICICI from "../assets/Kotak_Mahindra_bank_logo.png";
+import Canara from "../assets/can-hsbc-new.png";
+import IndiaFirst from "../assets/india-png.png";
 
 const Clients = () => {
   return (
