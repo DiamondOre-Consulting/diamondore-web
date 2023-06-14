@@ -12,7 +12,6 @@ const Stats = () => {
           <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
             In our organization, we currently have a talented team of HRs, maintain a robust candidates database,
             and serve a diverse clientele who are satisfied with our work.
-            customers.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-6 rounded-lg bg-newBlue p-6 md:grid-cols-4 md:gap-8 md:p-8 drop-shadow-2xl">

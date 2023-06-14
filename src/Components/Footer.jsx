@@ -260,7 +260,7 @@ const Footer = () => {
             </p>
 
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              &copy; 2023 Diamond Ore - Job Consultancy Pvt. Ltd.
+              &copy; 2023 Diamond Ore - Consulting Pvt. Ltd.
             </p>
           </div>
         </div>
