@@ -3,7 +3,6 @@ import Bupa from "../assets/agarwal.png";
 import SBI from "../assets/sbinew-png.png";
 import NewMax from "../assets/logo2.png";
 import Aviva from "../assets/Care_health_insurance_logo.png";
-import ICICI from "../assets/Kotak_Mahindra_bank_logo.png";
 import Canara from "../assets/can-hsbc-new.png";
 import IndiaFirst from "../assets/india-png.png";
 import ABG from "../assets/ABG-logo.png";
