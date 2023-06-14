@@ -44,12 +44,14 @@ const Stats = () => {
 
           <div className="flex flex-col items-center">
             <div className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-              A couple
+              A couple of
             </div>
-            <div className="text-sm text-indigo-200 sm:text-base">
-              Coffee breaks
+            <div className="text-sm text-center text-indigo-200 sm:text-base">
+              Coffee breaks & Unlimited fun
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

@@ -15,8 +15,8 @@ const HomeAbout = () => {
 
           <p className="text-gray-500 text-2xl md:mt-4 md:block sm:block">
             <span className="text-#3b5998 font-bold">Diamond Ore</span> Consulting Pvt. Ltd. is India's one of the leading job
-            consultancy and vendor of choice to clients. We aim at helping the
-            job seekers realize their true potential & help clients give the
+            consultancies and Vendor Of Choice to clients. We aim at helping the
+            job seekers realize their true potential & help clients get the
             talent they deserve. <span className="font-bold text-newBlue">CHOOSE US AND YOU WON'T REGRET!!!</span>  
           </p>
 
