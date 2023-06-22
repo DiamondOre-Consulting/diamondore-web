@@ -3,6 +3,7 @@ import TempLogo from "/src/assets/NewDiamond-1.png";
 import Girl from "/src/assets/girl-leftSVG.svg";
 import Boy from "/src/assets/guy-rightSVG.svg";
 import Diamond from "/src/assets/man-woman.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -41,13 +42,13 @@ const Hero = () => {
               </p>
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
+              <Link
                 className="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-                href="https://meetpro.club/Amaan"
+                to={'/team'}
                 target="_blank"
               >
                 For Job Seeker
-              </a>
+              </Link>
 
               {/* <a
                 className="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
