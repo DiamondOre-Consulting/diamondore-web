@@ -289,7 +289,7 @@ const HrList = () => {
               <a
                 class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
                 target="_blank"
-                href="https://meetpro.club/swatichauhan"
+                href="https://meetpro.club/Surajsamrat"
               >
                 Book Now
               </a>
@@ -351,7 +351,7 @@ const HrList = () => {
               <a
                 class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
                 target="_blank"
-                href="https://meetpro.club/Surajsamrat"
+                href="https://meetpro.club/swatichauhan"
               >
                 Book Now
               </a>
