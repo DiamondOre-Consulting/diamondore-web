@@ -222,12 +222,12 @@ const HrList = () => {
 
             <div className="flex flex-col gap-3">
               <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Manpreet Kaur
+                Pinky Yadav
               </div>
               <a
                 class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
                 target="_blank"
-                href="#"
+                href="https://meetpro.club/PinkyYadav"
               >
                 Book Now
               </a>
