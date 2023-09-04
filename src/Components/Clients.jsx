@@ -27,8 +27,9 @@ const Clients = () => {
             <img className="bg-transparent drop-shadow-2xl w-1/4" src={Bupa} alt="" />
           </div>
 
-          <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
-            <img className="bg-transparent drop-shadow-2xl w-1/4" src={SBI} alt="" />
+          <div className="flex gap-2 h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
+            <img className="bg-transparent drop-shadow-2xl w-1/6" src={SBI} alt="" />
+            <p className="text-[1.5rem] font-bold text-blue-600">GROUP</p>
           </div>
 
           {/* <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
@@ -59,8 +60,9 @@ const Clients = () => {
             <img className="bg-transparent drop-shadow-2xl w-1/2" src={ABG} alt="" />
           </div>
 
-          <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
-            <img className="bg-transparent drop-shadow-2xl w-1/3" src={Kotak} alt="" />
+          <div className="flex gap-2 h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
+            <img className="bg-transparent drop-shadow-2xl w-1/4" src={Kotak} alt="" />
+            <p className="text-[1.5rem] font-bold text-blue-700">GR<span className="text-red-600">OUP</span></p>
           </div>
 
           <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
