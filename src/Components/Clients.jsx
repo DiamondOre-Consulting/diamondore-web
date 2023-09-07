@@ -1,12 +1,14 @@
 import React from "react";
-import Bupa from "../assets/agarwal.png";
-import SBI from "../assets/sbinew-png.png";
+import Bupa from "../assets/agarwal_packers.png";
+import SBI from "../assets/sbiLogo.png";
 import NewMax from "../assets/logo2.png";
 import Aviva from "../assets/Care_health_insurance_logo.png";
 import Canara from "../assets/can-hsbc-new.png";
 import IndiaFirst from "../assets/india-png.png";
 import ABG from "../assets/ABG-logo.png";
-import Kotak from "../assets/kotak-logo-identity.jpg";
+import Kotak from "../assets/kotak-group.svg";
+import PNB from "../assets/Punjab_National_Bank.png";
+import Edel from "../assets/edelweiss_tokio.png";
 
 const Clients = () => {
   return (
@@ -24,12 +26,12 @@ const Clients = () => {
 
         <div className="grid grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6">
           <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
-            <img className="bg-transparent drop-shadow-2xl w-1/4" src={Bupa} alt="" />
+            <img className="bg-transparent drop-shadow-2xl w-1/2" src={Bupa} alt="" />
           </div>
 
           <div className="flex gap-2 h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
-            <img className="bg-transparent drop-shadow-2xl w-1/6" src={SBI} alt="" />
-            <p className="text-[1.5rem] font-bold text-blue-600">GROUP</p>
+            <img className="bg-transparent drop-shadow-2xl w-1/3" src={SBI} alt="" />
+            {/* <p className="text-[1.5rem] font-bold text-blue-600">GROUP</p> */}
           </div>
 
           {/* <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
@@ -61,8 +63,18 @@ const Clients = () => {
           </div>
 
           <div className="flex gap-2 h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
-            <img className="bg-transparent drop-shadow-2xl w-1/4" src={Kotak} alt="" />
-            <p className="text-[1.5rem] font-bold text-blue-700">GR<span className="text-red-600">OUP</span></p>
+            <img className="bg-transparent drop-shadow-2xl w-2/3" src={Kotak} alt="" />
+            {/* <p className="text-[1.5rem] font-bold text-blue-700">GR<span className="text-red-600">OUP</span></p> */}
+          </div>
+
+          <div className="flex gap-2 h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
+            <img className="bg-transparent drop-shadow-2xl w-1/2" src={PNB} alt="" />
+            {/* <p className="text-[1.5rem] font-bold text-blue-700">GR<span className="text-red-600">OUP</span></p> */}
+          </div>
+
+          <div className="flex gap-2 h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
+            <img className="bg-transparent drop-shadow-2xl w-1/2" src={Edel} alt="" />
+            {/* <p className="text-[1.5rem] font-bold text-blue-700">GR<span className="text-red-600">OUP</span></p> */}
           </div>
 
           <div className="flex h-16 items-center justify-center rounded-lg bg-bgColor p-4 text-gray-400 sm:h-32 drop-shadow-xl hover:drop-shadow-2xl">
