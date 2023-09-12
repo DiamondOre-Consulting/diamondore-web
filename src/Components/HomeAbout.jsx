@@ -22,10 +22,10 @@ const HomeAbout = () => {
 
           <div className="mt-5 md:mt-8">
             <Link
-              to={"/contact"}
+              to={"https://forms.gle/Ge6z8qFXAbLHQNBD6"}
               className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
-              Ask More
+              Get Started
             </Link>
           </div>
         </div>

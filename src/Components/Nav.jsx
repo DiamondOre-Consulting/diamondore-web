@@ -45,12 +45,21 @@ const Nav = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-lg font-semibold text-newBlue transition hover:text-newBlue/50"
-                    href="/"
+                    to={'https://forms.gle/Ge6z8qFXAbLHQNBD6'}
                   >
-                    Upcomings
-                  </a>
+                    For Job Consultation
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="text-lg font-semibold text-newBlue transition hover:text-newBlue/50"
+                    to={'https://forms.gle/Ge6z8qFXAbLHQNBD6'}
+                  >
+                    For CV Building
+                  </Link>
                 </li>
               </ul>
             </nav>

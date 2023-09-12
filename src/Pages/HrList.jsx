@@ -6,47 +6,92 @@ import Kunj from "../assets/Kunj.png";
 import Manpreet from "../assets/Manpreet.png";
 import Swati from "../assets/Swati.png";
 import Uma from "../assets/Uma.png";
+import GetStarted_1 from "../assets/canvaGetstarted.jpg";
+import ResumeReject from "../assets/ResumeReject.png";
+import { Link } from "react-router-dom";
 
 const HrList = () => {
   return (
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
-      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
-        <div class="mb-10 md:mb-16">
-          <h2 class="mb-4 text-center text-2xl font-bold text-newBlue md:mb-6 lg:text-3xl">
-            Meet our Consultants
-          </h2>
+    <>
+      <section className="bg-white">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="bg-newBlue p-8 md:p-12 lg:px-16 lg:py-24">
+              <div className="mx-auto max-w-xl text-center">
+                <h2 className="text-2xl font-bold text-white md:text-3xl">
+                  Seeking for a job change or a professionally crafted CV?
+                </h2>
 
-          <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-            Discover our team of experienced consultants, dedicated to unlocking
-            your potential and guiding you to success. Experience solutions
-            tailored to your unique needs.
-          </p>
+                <p className="hidden text-white/90 sm:mt-4 sm:block">
+                  Complete this form with your details, and our team will
+                  contact you shortly to assist in your career transition.
+                </p>
+
+                <div className="mt-4 md:mt-8">
+                  <Link
+                    to={'https://forms.gle/Ge6z8qFXAbLHQNBD6'}
+                    className="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-newBlue transition hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
+                  >
+                    Get Started Today
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
+              <img
+                alt="Photo by Canva Studio"
+                src={GetStarted_1}
+                className="h-40 w-full object-cover sm:h-56 md:h-full"
+              />
+
+              <img
+                alt="Resume Rejected Pic"
+                src={ResumeReject}
+                className="h-40 w-full object-cover sm:h-56 md:h-full"
+              />
+            </div>
+          </div>
         </div>
+      </section>
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="mb-10 md:mb-16">
+            <h2 class="mb-4 text-center text-2xl font-bold text-newBlue md:mb-6 lg:text-3xl">
+              Meet our team of experts
+            </h2>
 
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Amaan}
-                loading="lazy"
-                alt="Photo by Radu Florin"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
+            <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+              Discover our team of experienced consultants, dedicated to
+              unlocking your potential and guiding you to success. Experience
+              solutions tailored to your unique needs.
+            </p>
+          </div>
 
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Amaan
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Amaan}
+                  loading="lazy"
+                  alt="Photo by Radu Florin"
+                  class="h-full w-full object-cover object-center"
+                />
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                href="https://meetpro.club/Amaan"
-                target="_blank"
-              >
-                Book Now
-              </a>
 
-              {/* <div class="flex justify-center">
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Amaan
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  href="https://meetpro.club/Amaan"
+                  target="_blank"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -83,32 +128,32 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Ashwini}
-                loading="lazy"
-                alt="Photo by christian ferrer"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Ashwini Bhaskar
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                target="_blank"
-                href="https://meetpro.club/AshwiniBhaskar"
-              >
-                Book Now
-              </a>
+            </div>
 
-              {/* <div class="flex justify-center">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Ashwini}
+                  loading="lazy"
+                  alt="Photo by christian ferrer"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Ashwini Bhaskar
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  target="_blank"
+                  href="https://meetpro.club/AshwiniBhaskar"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -145,32 +190,32 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Kunj}
-                loading="lazy"
-                alt="Photo by Ayo Ogunseinde"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Kunj Bihari
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                target="_blank"
-                href="https://meetpro.club/kunjbihari"
-              >
-                Book Now
-              </a>
+            </div>
 
-              {/* <div class="flex justify-center">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Kunj}
+                  loading="lazy"
+                  alt="Photo by Ayo Ogunseinde"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Kunj Bihari
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  target="_blank"
+                  href="https://meetpro.club/kunjbihari"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -207,32 +252,32 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Manpreet}
-                loading="lazy"
-                alt="Photo by Midas Hofstra"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Pinky Yadav
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                target="_blank"
-                href="https://meetpro.club/PinkyYadav"
-              >
-                Book Now
-              </a>
+            </div>
 
-              {/* <div class="flex justify-center">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Manpreet}
+                  loading="lazy"
+                  alt="Photo by Midas Hofstra"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Pinky Yadav
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  target="_blank"
+                  href="https://meetpro.club/PinkyYadav"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -269,32 +314,32 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Suraj}
-                loading="lazy"
-                alt="Photo by Elizeu Dias"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Suraj Samrat
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                target="_blank"
-                href="https://meetpro.club/Surajsamrat"
-              >
-                Book Now
-              </a>
+            </div>
 
-              {/* <div class="flex justify-center">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Suraj}
+                  loading="lazy"
+                  alt="Photo by Elizeu Dias"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Suraj Samrat
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  target="_blank"
+                  href="https://meetpro.club/Surajsamrat"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -331,32 +376,32 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Swati}
-                loading="lazy"
-                alt="Photo by Matheus Ferrero"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Swati Chauhan
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                target="_blank"
-                href="https://meetpro.club/swatichauhan"
-              >
-                Book Now
-              </a>
+            </div>
 
-              {/* <div class="flex justify-center">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Swati}
+                  loading="lazy"
+                  alt="Photo by Matheus Ferrero"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Swati Chauhan
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  target="_blank"
+                  href="https://meetpro.club/swatichauhan"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -393,32 +438,32 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
-            <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-              <img
-                src={Uma}
-                loading="lazy"
-                alt="Photo by Leilani Angel"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3">
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Uma Pal
               </div>
-              <a
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
-                target="_blank"
-                href="https://meetpro.club/umapal"
-              >
-                Book Now
-              </a>
+            </div>
 
-              {/* <div class="flex justify-center">
+            <div class="flex flex-col items-center rounded-lg bg-bgColor p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img
+                  src={Uma}
+                  loading="lazy"
+                  alt="Photo by Leilani Angel"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Uma Pal
+                </div>
+                <a
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base hover:text-newBlue cursor-pointer"
+                  target="_blank"
+                  href="https://meetpro.club/umapal"
+                >
+                  Book Now
+                </a>
+
+                {/* <div class="flex justify-center">
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -455,10 +500,10 @@ const HrList = () => {
                   </a>
                 </div>
               </div> */}
+              </div>
             </div>
-          </div>
 
-          {/* <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+            {/* <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
             <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
               <img
                 src="https://images.unsplash.com/photo-1562904403-a5106bef8319?auto=format&q=75&fit=crop&w=256"
@@ -515,9 +560,10 @@ const HrList = () => {
               </div>
             </div>
           </div> */}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

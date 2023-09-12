@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -112,21 +113,23 @@ const Footer = () => {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     className="text-newBlue transition hover:text-newBlue/75"
-                    href="/"
+                    to={'https://forms.gle/Ge6z8qFXAbLHQNBD6'}
+                    target="_blank"
                   >
-                    Job Consultancy
-                  </a>
+                    Job Consultation
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-newBlue transition hover:text-newBlue/75"
-                    href="/"
+                    to={'https://forms.gle/Ge6z8qFXAbLHQNBD6'}
+                    target="_blank"
                   >
-                    Upcoming Services
-                  </a>
+                    CV Building Service
+                  </Link>
                 </li>
               </ul>
             </div>
