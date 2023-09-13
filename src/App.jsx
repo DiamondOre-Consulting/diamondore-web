@@ -12,8 +12,8 @@ function App() {
         <Nav />
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route exact path="/contact" element={<ContactUs/>} />
-          <Route exact path="/team" element={<HrList />} />
+          <Route path="/contact" element={<ContactUs/>} />
+          <Route path="/team" element={<HrList />} />
         </Routes>
         <Footer />
       </Router>
