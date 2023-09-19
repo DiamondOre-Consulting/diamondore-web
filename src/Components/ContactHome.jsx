@@ -1,6 +1,5 @@
 import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
-// import ElfReactWidget from 'react-elfsight-widget';
 
 const ContactHome = () => {
   const form = useRef();
@@ -20,7 +19,6 @@ const ContactHome = () => {
 
   return (
     <div>
-      {/* <ElfReactWidget widgetId="elfsight-app-78701c55-c42a-4978-baad-601d87804ecd" /> */}
       <section className="bg-bgColor dark:bg-bgColor">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-newBlue dark:text-newBlue">
