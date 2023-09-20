@@ -6,33 +6,42 @@ import MutualFund from "../assets/MutualFundImg.png";
 import { Link } from "react-router-dom";
 
 const ConsultingPage = () => {
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_siyau4x', 'template_w4pkfl2', form.current, '2ZjvnCotDVgMl5Q8s')
-        .then((result) => {
-            console.log(result.text);
-            console.log("message sent");
-            e.target.reset();
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_siyau4x",
+        "template_w4pkfl2",
+        form.current,
+        "2ZjvnCotDVgMl5Q8s"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div>
       <section
-        className="bg-bgColor bg-cover bg-fixed bg-center"
+        className="bg-bgColor bg-cover bg-fixed bg-center relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(${MutualFund})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(https://blog.mint.com/wp-content/uploads/2022/05/story1-1.jpg)`,
         }}
       >
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-left sm:text-left">
-            <div className="flex justify-between">
-              <img className="h-[8rem]" src={Midas} alt="" />
-              <img className="h-[8rem]" src={DOC} alt="" />
+            <div className="flex flex-wrap justify-center mb-8 sm:flex-nowrap">
+              <img className="h-[8rem] w-auto" src={Midas} alt="" />
+              <img className="h-[8rem] w-auto" src={DOC} alt="" />
             </div>
             <h1 className="text-3xl text-gray-300 font-extrabold sm:text-5xl">
               One stop to invest in
@@ -47,7 +56,7 @@ const ConsultingPage = () => {
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
               <a
-                href={'/consulting#contact-mutual-funds'}
+                href={"/consulting#contact-mutual-funds"}
                 className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
               >
                 Get Started
@@ -63,6 +72,8 @@ const ConsultingPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Second Section Start */}
       <div className="bg-white py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-10 md:mb-16">
@@ -206,7 +217,9 @@ const ConsultingPage = () => {
               </div>
 
               <div>
-                <h3 className="mb-2 text-lg font-semibold md:text-xl">Insurance</h3>
+                <h3 className="mb-2 text-lg font-semibold md:text-xl">
+                  Insurance
+                </h3>
                 <p className="mb-2 text-gray-500">
                   New age ULIP, Life Insurance, Health Insurance, General
                   Insurance
@@ -230,6 +243,8 @@ const ConsultingPage = () => {
           </div>
         </div>
       </div>
+      {/* Second Section End */}
+
       {/* Contact Start */}
       <section id="contact-mutual-funds" className="bg-gray-50">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -241,7 +256,7 @@ const ConsultingPage = () => {
             Need details about our Business plan? Let us know.
           </p>
           <form ref={form} className="space-y-8" onSubmit={sendEmail}>
-          <div>
+            <div>
               <label
                 htmlFor="name"
                 className="block mb-2 text-sm font-medium text-newBlue dark:text-newBlue"
