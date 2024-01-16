@@ -43,7 +43,7 @@ const MetaPixel = () => {
     };
   return (
     <Helmet>
-        {renderMetaPixel}
+        {renderMetaPixel()}
     </Helmet>
   );
 };
