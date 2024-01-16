@@ -5,10 +5,12 @@ import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
 import HrList from "./Pages/HrList";
 import ConsultingPage from "./Pages/ConsultingPage";
+import MetaPixel from "./utils/meta/metapixel";
 
 function App() {
   return (
     <div>
+      <MetaPixel />
       <Router>
         <Nav />
         <Routes>
