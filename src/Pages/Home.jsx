@@ -8,11 +8,12 @@ import Testimonials from '../Components/Testimonials'
 import Footer from '../Components/Footer'
 import ContactHome from '../Components/ContactHome'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MetaPixel from '../utils/meta/metapixel'
 
 const Home = () => {
   return (
     <div>
-        {/* <Nav /> */}
+        <MetaPixel />
         <Hero />
         <HomeAbout />
         <Clients />
