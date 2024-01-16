@@ -34,7 +34,9 @@ const MetaPixel = () => {
         );
     
         scripts.push(
-            React.createElement('noscript', { key: 'image', id: 'facebook-pixel-image' }, 'YOUR_IMAGE')
+            React.createElement('noscript', { key: 'image', id: 'facebook-pixel-image' }, ` <img height="1" width="1" 
+            src="https://www.facebook.com/tr?id=935198161540004&ev=PageView
+            &noscript=1"/>`)
         );
     
         return scripts;
